@@ -1,0 +1,157 @@
+.services {
+  // .services__container
+
+  &__container {
+  }
+
+  // .services__body
+
+  &__body {
+  }
+
+  // .services__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+
+  // .services__title
+
+  &__title {
+    max-width: 684px;
+    margin-right: 120px;
+    line-height: 63px;
+  }
+
+  // .services__choice
+
+  &__choice {
+  }
+
+  // .services__bottom
+
+  &__bottom {
+  }
+
+  // .services__buttons
+
+  &__buttons {
+  }
+
+  // .services__list
+
+  &__list {
+  }
+
+  // .services__item
+
+  &__item {
+    max-width: 510px;
+    display: inline-block;
+    position: relative;
+    & img {
+      object-fit: cover;
+    }
+    &:nth-child(1) {
+      height: max-content;
+    }
+    &:nth-child(2) {
+      height: 520px;
+    }
+    &:nth-child(3) {
+      height: 520px;
+    }
+    &:nth-child(4) {
+      height: 240px;
+    }
+    &:nth-child(5) {
+      height: 350px;
+    }
+    &:nth-child(6) {
+      height: 350px;
+    }
+  }
+
+  // .services__link
+
+  &__link {
+  }
+
+  // .services__img
+
+  &__img {
+  }
+
+  // .services__heading
+
+  &__heading {
+    font-family: $fontFamilyOsw;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.title {
+  font-family: $fontFamilyOsw;
+  font-size: 45px;
+  text-transform: uppercase;
+
+  & span {
+    color: $colorBlue;
+  }
+}
+.services-choice {
+  // .services-choice__desc
+
+  &__desc {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  // .services-choice__body
+
+  &__body {
+    display: flex;
+  }
+
+  // .services-choice__img
+
+  &__img {
+    display: flex;
+    margin-right: 30px;
+  }
+
+  // .services-choice__country
+
+  &__country {
+    display: block;
+    width: 50px;
+    height: 30px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  // .services-choice__link
+
+  &__link {
+    font-size: 14px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.link {
+}
+.buttons {
+}
+.button {
+}
+.button-color-yellow {
+}

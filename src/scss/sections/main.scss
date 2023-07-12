@@ -1,0 +1,144 @@
+.main {
+  position: relative;
+  background-color: unset;
+
+  &::before {
+    content: "";
+    background-image: url(@img/main/main_man.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -168px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    max-height: 910px;
+  }
+
+  // .main__container
+
+  &__container {
+    position: relative;
+  }
+
+  // .main__background
+
+  &__background {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 168px);
+    height: 685px;
+    border: 10px solid #fff;
+  }
+
+  // .main__background-img
+
+  &__background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // .main__body
+
+  &__body {
+    position: relative;
+    z-index: 2;
+    padding: 100px 0 0 580px;
+  }
+
+  // .main__title
+
+  &__title {
+    font-family: $fontFamilyOsw;
+    font-size: 70px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #e3077f;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    max-width: 84%;
+
+    & span {
+      font-size: 50px;
+      color: $colorBlue;
+    }
+
+    &::before {
+      content: "Rehab Recovery";
+      font-size: 30px;
+      line-height: normal;
+      color: #bec6cd;
+    }
+  }
+
+  // .main__buttons
+
+  &__buttons {
+    margin-bottom: 92px;
+  }
+
+  // .main__cards
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: -5px;
+    max-width: 910px;
+  }
+
+  // .main__card
+
+  &__card {
+  }
+}
+
+.main-card {
+  padding: 5px;
+  // .main-card__inner
+
+  &__inner {
+    height: 100%;
+    padding: 40px 20px;
+    background: $colorGray;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  // .main-card__img
+
+  &__img {
+    margin-right: 20px;
+  }
+
+  // .main-card__text
+
+  &__text {
+  }
+
+  // .main-card__subtitle
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+
+  // .main-card__desc
+
+  &__desc {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  // .main-card__button
+
+  &__button {
+  }
+}
+.subtitle {
+}

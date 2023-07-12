@@ -1,0 +1,43 @@
+// Заголовки, общие БЄМ блоки и проче...
+section {
+    background-color: #fff;
+    margin: 100px 0;
+}
+.wrapper {
+  z-index: 22;
+  background: url(@img/main/main_back-1.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 1100px;
+}
+.gradient {
+  background: linear-gradient(90deg, #e5007d 0%, #008bd2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  & .button:first-child {
+    margin-right: 10px;
+  }
+}
+.button {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #f2edeb;
+  padding: 17px 30px;
+  border-radius: 3px;
+  // .button-color-yellow
+
+  &-color-yellow {
+    background: $colorYellow;
+  }
+}
+.link {
+  font-size: 13px;
+  color: $colorBlue;
+  text-decoration: underline;
+}
