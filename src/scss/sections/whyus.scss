@@ -1,0 +1,68 @@
+.whyus {
+  // .whyus__container
+
+  &__container {
+  }
+
+  // .whyus__body
+
+  &__body {
+    padding: 0px 90px;
+  }
+
+  // .whyus__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .whyus__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  // .whyus__num
+
+  &__num {
+    font-family: $fontFamilyOsw;
+    font-size: 90px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: var(
+      --main-gradient,
+      linear-gradient(25deg, #e3077f 0%, #0289cc 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+
+  // .whyus__title
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  // .whyus__subtitle
+
+  &__subtitle {
+    color: #808080;
+    margin-bottom: 20px;
+  }
+
+  // .whyus__button
+
+  &__button {
+  }
+}
+.button {
+}

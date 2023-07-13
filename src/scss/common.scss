@@ -1,7 +1,7 @@
 // Заголовки, общие БЄМ блоки и проче...
 section {
-    background-color: #fff;
-    margin: 100px 0;
+  background-color: #fff;
+  margin: 100px 0;
 }
 .wrapper {
   z-index: 22;
@@ -29,7 +29,7 @@ section {
   text-transform: uppercase;
   background: #f2edeb;
   padding: 17px 30px;
-  border-radius: 3px;
+  border-radius: $borderRadiusSmall;
   // .button-color-yellow
 
   &-color-yellow {
@@ -40,4 +40,42 @@ section {
   font-size: 13px;
   color: $colorBlue;
   text-decoration: underline;
+}
+
+@media (hover: hover) {
+  button,
+  a,
+  button:hover,
+  a:hover {
+    transition: all 0.3s;
+  }
+
+  .link {
+    &:hover {
+      color: $mainColor;
+    }
+  }
+
+  .services-choice__country {
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+
+  .services__bottom-img {
+    transition: all 0.3s;
+  }
+  .services__bottom-link {
+    &:hover {
+      & .services__bottom-img {
+        filter: brightness(90%);
+      }
+    }
+  }
+
+  .services-other__button {
+    &:hover {
+      background-color: $colorGrayHover;
+    }
+  }
 }
