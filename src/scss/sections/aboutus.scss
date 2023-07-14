@@ -1,0 +1,160 @@
+.aboutus {
+  position: relative;
+
+  &::after {
+    content: "Помощь зависимым";
+    position: absolute;
+    z-index: 0;
+    bottom: -70px;
+    left: 0;
+    font-family: $fontFamilyOsw;
+    font-size: 204px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    text-shadow:
+      1px 1px 0 #cddce8,
+      1px -1px 0 #cddce8,
+      -1px 1px 0 #cddce8,
+      -1px -1px 0 #cddce8;
+  }
+  // .aboutus__container
+
+  &__container {
+  }
+
+  // .aboutus__body
+
+  &__body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .aboutus__logo
+
+  &__logo {
+    display: flex;
+    margin-right: 46px;
+    flex-shrink: 0;
+  }
+
+  // .aboutus__logo-link
+
+  &__logo-link {
+  }
+
+  // .aboutus__logo-img
+
+  &__logo-img {
+  }
+
+  // .aboutus__text
+
+  &__text {
+    max-width: 920px;
+    margin-right: auto;
+  }
+
+  // .aboutus__desc
+
+  &__desc {
+    font-family: $fontFamilyOsw;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 55px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  // .aboutus__link
+
+  &__link {
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    &::before {
+      content: "";
+      background: $colorYellow url("@img/arrow.svg") center center no-repeat;
+      background-size: contain;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-right: 10px;
+      position: relative;
+      z-index: 1;
+    }
+    &::after {
+      content: "";
+      background: $colorYellow center center no-repeat;
+      background-size: 100%;
+      width: 50px;
+      height: 50px;
+      border-radius: 30px;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      transition: all 0.3s;
+    }
+  }
+
+  // .aboutus__socials
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  // .aboutus__socials-link
+
+  &__socials-link {
+    display: flex;
+    align-items: center;
+    text-decoration: underline !important;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &::after {
+      content: "";
+      width: 26px;
+      height: 26px;
+      background-size: 100%;
+      margin-left: 15px;
+    }
+  }
+
+  // .aboutus__yt
+  &__yt {
+    &::after {
+      background: url("@img/icon_yt.svg");
+    }
+  }
+
+  // .aboutus__tg
+  &__tg {
+    &::after {
+      background: url("@img/icon_tg.svg") center center no-repeat;
+    }
+  }
+
+  // .aboutus__vk
+  &__vk {
+    &::after {
+      background: url("@img/icon_vk.svg");
+    }
+  }
+}
+.logo {
+}

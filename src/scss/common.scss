@@ -4,6 +4,7 @@ section {
   margin: 100px 0;
 }
 .wrapper {
+  position: relative;
   z-index: 22;
   background: url(@img/main/main_back-1.jpg);
   background-position: 0 0;
@@ -39,7 +40,41 @@ section {
 .link {
   font-size: 13px;
   color: $colorBlue;
-  text-decoration: underline;
+  text-decoration: underline !important;
+}
+
+.title {
+  font-family: $fontFamilyOsw;
+  font-size: 45px;
+  text-transform: uppercase;
+
+  & span {
+    color: $colorBlue;
+  }
+}
+
+.desc {
+  line-height: 26px;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.swiper-button {
+  content: "";
+  background: url("@img/arrow.svg") center center no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid $mainColor;
+}
+.swiper-button-prev {
+  transform: rotate(180deg);
+}
+
+.logo {
+  max-width: 75px;
+  max-height: 100px;
 }
 
 @media (hover: hover) {
@@ -56,6 +91,17 @@ section {
     }
   }
 
+  .swiper-button-prev {
+    &:hover {
+      transform: rotate(180deg) scale(0.95);
+    }
+  }
+  .swiper-button-next {
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+
   .services-choice__country {
     &:hover {
       transform: scale(0.95);
@@ -65,10 +111,17 @@ section {
   .services__bottom-img {
     transition: all 0.3s;
   }
+  .services__heading::after {
+    transition: all 0.3s;
+  }
   .services__bottom-link {
     &:hover {
       & .services__bottom-img {
         filter: brightness(90%);
+      }
+
+      & .services__heading::after {
+        transform: translateX(5px);
       }
     }
   }
@@ -76,6 +129,42 @@ section {
   .services-other__button {
     &:hover {
       background-color: $colorGrayHover;
+    }
+  }
+
+  .centers__img {
+    transition: all 0.3s;
+  }
+  .centers__link {
+    &:hover {
+      & .centers__img {
+        transform: scale(1.02);
+        filter: brightness(90%);
+      }
+    }
+  }
+
+  .aboutus__link {
+    &:hover {
+      &::after {
+        transition: all 0.3s;
+        width: calc(100% + 20px);
+      }
+    }
+  }
+
+  .aboutus__socials-link {
+    &:hover {
+      color: $colorBlue;
+    }
+  }
+
+  .faq-spollers__item {
+    transition: all 0.3s;
+
+    &:hover {
+      transition: all 0.3s;
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.6);
     }
   }
 }

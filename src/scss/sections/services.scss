@@ -187,12 +187,12 @@
 
     &::after {
       content: "";
-      background-image: url(@img/arrow.svg);
+      background: #fff url(@img/arrow.svg) center center no-repeat;
       background-size: 100%;
-      background-repeat: no-repeat;
       width: 50px;
       height: 50px;
       flex-shrink: 0;
+      border-radius: 50%;
     }
   }
 
@@ -236,15 +236,7 @@
   }
 }
 
-.title {
-  font-family: $fontFamilyOsw;
-  font-size: 45px;
-  text-transform: uppercase;
 
-  & span {
-    color: $colorBlue;
-  }
-}
 .services-choice {
   // .services-choice__desc
 

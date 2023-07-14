@@ -39,7 +39,7 @@ flsFunctions.isWebp();
 Документация: https://template.fls.guru/template-docs/modul-spojlery.html
 Сниппет (HTML): spollers
 */
-// flsFunctions.spollers();
+flsFunctions.spollers();
 
 /*
 Модуль работы с табами
@@ -134,7 +134,7 @@ flsForms.formFieldsInit({
 Документация плагина: https://swiperjs.com/
 Сниппет(HTML): swiper
 */
-// import "./files/sliders.js";
+import "./files/sliders.js";
 
 // ========================================================================================================================================================================================================================================================
 // Модули работы с прокруткой страницы ========================================================================================================================================================================================================================================================
@@ -152,7 +152,7 @@ flsForms.formFieldsInit({
 // Документация по работе в шаблоне: https://template.fls.guru/template-docs/modul-lenivaya-podgruzka-lazy-loading.html
 // Документация плагина: https://github.com/verlok/vanilla-lazyload
 // Сниппет(HTML):
-// import './files/scroll/lazyload.js';
+import './files/scroll/lazyload.js';
 
 // Наблюдатель за объектами c атрибутом data-watch
 // Документация: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
@@ -168,7 +168,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 
 // Функционал добавления классов к хедеру при прокрутке
 // Документация: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
-// flsScroll.headerScroll();
+flsScroll.headerScroll();
 
 // Функционал липкого блока
 // flsScroll.stickyBlock();

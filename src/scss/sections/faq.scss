@@ -1,0 +1,103 @@
+.faq {
+  // .faq__container
+
+  &__container {
+  }
+
+  // .faq__body
+
+  &__body {
+  }
+
+  // .faq__top
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  // .faq__title
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  // .faq__desc
+
+  &__desc {
+    margin-bottom: unset;
+  }
+
+  // .faq__buttons
+
+  &__buttons {
+    margin-top: auto;
+  }
+
+  // .faq__bottom
+
+  &__bottom {
+  }
+
+  // .faq__spollers
+
+  &__spollers {
+  }
+}
+.reviews {
+  // .reviews__text
+
+  &__text {
+  }
+}
+.title {
+}
+.desc {
+}
+.buttons {
+}
+.button {
+}
+.button-color-yellow {
+}
+.faq-spollers {
+  // .faq-spollers__item
+
+  &__item {
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+  }
+
+  // .faq-spollers__title
+
+  &__title {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 35px 0;
+
+    &::after {
+      content: "";
+      background: url("@img/arrow_spoller.svg") center center no-repeat;
+      background-size: 100%;
+      width: 16px;
+      height: 9px;
+      transition: all 0.3s;
+    }
+
+    &._spoller-active {
+      &::after {
+        transform: scale(1, -1);
+      }
+    }
+  }
+
+  // .faq-spollers__body
+
+  &__body {
+    margin-bottom: 20px;
+  }
+}

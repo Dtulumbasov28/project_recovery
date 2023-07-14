@@ -6,7 +6,7 @@
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
 //&display=swap - добавить при подключении через плагин
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Oswald:regular,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,regular,500&display=swap);
 
 // Подключить если есть локальные файлы шрифтов
 //@import "fonts/fonts";
@@ -102,6 +102,7 @@ body {
   // Прижимаем footer
   > main {
     flex: 1 1 auto;
+    margin-top: 156px;
   }
   // Фикс для слайдеров
   > * {
@@ -180,3 +181,7 @@ body {
 @import "sections/main";
 @import "sections/services";
 @import "sections/whyus";
+@import "sections/centers";
+@import "sections/aboutus";
+@import "sections/reviews";
+@import "sections/faq";

@@ -33,10 +33,7 @@
     font-size: 90px;
     font-weight: 500;
     text-transform: uppercase;
-    background: var(
-      --main-gradient,
-      linear-gradient(25deg, #e3077f 0%, #0289cc 100%)
-    );
+    background: linear-gradient(25deg, #e3077f 0%, #0289cc 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

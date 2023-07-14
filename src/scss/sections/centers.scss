@@ -1,0 +1,178 @@
+.centers {
+  // .centers__container
+
+  &__container {
+  }
+
+  // .centers__body
+
+  &__body {
+  }
+
+  // .centers__top
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .centers__title
+
+  &__title {
+    line-height: 63px;
+    margin-bottom: 8px;
+  }
+
+  // .centers__desc
+
+  &__desc {
+
+  }
+
+  // .centers__slider
+
+  &__slider {
+  }
+
+  // .centers__slider-navigation
+
+  &__slider-navigation {
+    margin: auto 0 30px 0;
+  }
+
+  // .centers__wrapper
+
+  &__wrapper {
+  }
+
+  // .centers__slide
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    max-width: 512px;
+  }
+
+  // .centers__link
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .centers__img-wrapper
+
+  &__img-wrapper {
+    max-height: 250px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  // .centers__img
+
+  &__img {
+    object-fit: cover;
+  }
+
+  // .centers__heading
+
+  &__heading {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    padding-right: 20px;
+  }
+
+  // .centers__address
+
+  &__address {
+    color: #808080;
+    line-height: 22px;
+    &::before {
+      background-image: url(@img/icon_map.svg);
+      width: 24px;
+      height: 20px;
+    }
+  }
+
+  // .centers__phone
+
+  &__phone {
+    color: #808080;
+    line-height: 22px;
+    &::before {
+      background-image: url(@img/icon_phone.svg);
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  // .centers__mail
+
+  &__mail {
+    line-height: 22px;
+    &::before {
+      background-image: url(@img/icon_mail.svg);
+      width: 20px;
+      height: 15px;
+    }
+  }
+
+  // .centers__icon
+  &__icon {
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: 15px;
+    }
+  }
+}
+.title {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.centers {
+  // .centers__slider-navigation
+
+  &__slider-navigation {
+  }
+}
+.swiper {
+  // .swiper__navigation
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+
+    & button:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+.center-prev {
+}
+.swiper-button {
+}
+.swiper-button-prev {
+}
+.center-next {
+}
+.swiper-button-next {
+}
