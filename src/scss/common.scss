@@ -167,4 +167,10 @@ section {
       border-bottom: 1px solid rgba($color: #000000, $alpha: 0.6);
     }
   }
+
+  .footer-bottom__link {
+    &:hover {
+      color: $colorBlue;
+    }
+  }
 }

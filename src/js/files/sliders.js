@@ -48,8 +48,8 @@ function initSliders() {
 
     // Кнопки "влево/вправо"
     navigation: {
-      prevEl: ".center-prev",
-      nextEl: ".center-next",
+      prevEl: ".centers-prev",
+      nextEl: ".centers-next",
     },
 
     // Брейкпоинты
