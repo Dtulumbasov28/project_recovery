@@ -1,6 +1,7 @@
 .main {
   position: relative;
   background-color: unset;
+  margin-top: 0;
 
   &::before {
     content: "";
@@ -16,6 +17,15 @@
     height: 100%;
     max-width: 1100px;
     max-height: 910px;
+
+    @media (max-width: $notebook) {
+      left: -230px;
+      max-width: 900px;
+      max-height: 735px;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   // .main__container
@@ -28,10 +38,43 @@
 
   &__background {
     position: absolute;
-    top: 0;
+    top: 60px;
     width: calc(100% - 168px);
     height: 685px;
     border: 10px solid #fff;
+
+    @media (max-width: $mobileSmall) {
+      height: 350px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      border: 60px solid transparent;
+      border-top: 60px solid #fff;
+      border-right: 60px solid #fff;
+      top: 0;
+      right: 0;
+
+      @media (max-width: $mobile) {
+        border: 30px solid transparent;
+        border-top: 30px solid #fff;
+        border-right: 30px solid #fff;
+      }
+    }
+
+    @media (max-width: $notebook) {
+      top: 30px;
+    }
+    @media (max-width: $netbook) {
+      width: calc(100% - 56px);
+    }
+    @media (max-width: $tablet) {
+      top: 20px;
+    }
+    @media (max-width: $mobileSmall) {
+      width: calc(100% - 24px);
+    }
   }
 
   // .main__background-img
@@ -48,6 +91,16 @@
     position: relative;
     z-index: 2;
     padding: 100px 0 0 580px;
+
+    @media (max-width: $notebook) {
+      padding: 50px 0 0 360px;
+    }
+    @media (max-width: $tablet) {
+      padding: 50px 30px;
+    }
+    @media (max-width: $mobileSmall) {
+      padding: 50px 20px;
+    }
   }
 
   // .main__title
@@ -63,9 +116,27 @@
     margin-bottom: 30px;
     max-width: 84%;
 
+    @media (max-width: $netbook) {
+      max-width: 100%;
+      font-size: 60px;
+      line-height: 70px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 15px;
+    }
+
     & span {
       font-size: 50px;
       color: $colorBlue;
+
+      @media (max-width: $netbook) {
+        font-size: 44px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 25px;
+      }
     }
 
     &::before {
@@ -73,13 +144,27 @@
       font-size: 30px;
       line-height: normal;
       color: #bec6cd;
+
+      @media (max-width: $netbook) {
+        font-size: 26px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 22px;
+      }
     }
   }
 
   // .main__buttons
 
   &__buttons {
-    margin-bottom: 92px;
+    margin-bottom: 90px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 80px;
+    }
+    @media (max-width: $mobileSmall) {
+      margin-bottom: 100px;
+    }
   }
 
   // .main__cards
@@ -89,6 +174,14 @@
     grid-template-columns: repeat(2, 1fr);
     margin: -5px;
     max-width: 910px;
+
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(1, 1fr);
+      margin: -10px;
+    }
+    @media (max-width: $mobileSmall) {
+      margin: -30px;
+    }
   }
 
   // .main__card
@@ -99,6 +192,11 @@
 
 .main-card {
   padding: 5px;
+
+  @media (max-width: $mobile) {
+    padding: 10px;
+  }
+
   // .main-card__inner
 
   &__inner {
@@ -107,12 +205,26 @@
     background: $colorGray;
     display: flex;
     align-items: flex-start;
+
+    @media (max-width: $notebook) {
+      padding: 20px 15px;
+    }
+    @media (max-width: $mobileSmall) {
+      padding: 20px 12px;
+    }
   }
 
   // .main-card__img
 
   &__img {
     margin-right: 20px;
+    flex: 0 0 auto;
+    max-height: 60px;
+
+    @media (max-width: $mobileSmall) {
+      height: 37px;
+      margin-right: 12px;
+    }
   }
 
   // .main-card__text
@@ -126,6 +238,10 @@
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 7px;
+
+    @media (max-width: $mobileSmall) {
+      font-size: 15px;
+    }
   }
 
   // .main-card__desc
@@ -133,11 +249,16 @@
   &__desc {
     font-size: 14px;
     margin-bottom: 12px;
+
+    @media (max-width: $mobileSmall) {
+      font-size: 13px;
+    }
   }
 
   // .main-card__button
 
   &__button {
+    white-space: nowrap;
   }
 }
 .subtitle {

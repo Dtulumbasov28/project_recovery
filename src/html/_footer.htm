@@ -4,9 +4,11 @@
 			<div class="footer__col-form footer__form">
 				<div class="footer__form-headline">Свяжемся с вами в ближайшее время для решения вашей проблемы</div>
 				<div class="footer__form-desc">Оставьте ваши контакты и мы свяжемся с вами</div>
-				<form class="footer__form-body footer-form" action="#" method="POST">
-					<input type="text" name="name" placeholder="Ваше имя" class="footer-form__input input">
-					<input type="tel" name="tel" placeholder="Ваш телефон" class="footer-form__input input">
+				<form class="footer__form-body footer-form" data-ajax action="request.php" method="POST">
+					<input type="text" name="name" placeholder="Ваше имя" required
+						onkeyup="this.value = this.value.replace(/[a-z0-9+= ]/gi,'');" class="footer-form__input input">
+					<input type="tel" name="tel" placeholder="Ваш телефон" required
+						class="footer-form__input input tel">
 					<div class="footer-form__chekbox checkbox-block">
 						<label class="footer-form__checkbox-label checkbox">
 							<input class="footer-form__checkbox-input" type="checkbox">
@@ -22,11 +24,10 @@
 			<div class="footer__col-info footer-info">
 				<div class="footer-info__title title">Контакты</div>
 				<select class="footer-info__select">
-					<option>Россия, г. Москва </option>
-					<option>Apples</option>
-					<option>Bananas</option>
-					<option>Grapes</option>
-					<option>Oranges</option>
+					<option value="1">Россия, г. Москва</option>
+					<option value="2">Россия, г. Москва 2</option>
+					<option value="3">Россия, г. Москва 3</option>
+					<option value="4">Россия, г. Москва 4</option>
 				</select>
 				<div class="footer-info__phone footer-phone">
 					<div class="footer-phone__text">Круглосуточная поддержка</div>

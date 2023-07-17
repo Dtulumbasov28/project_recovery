@@ -43,6 +43,10 @@
   &__slide {
     max-width: 780px;
     max-height: 470px;
+
+    & video {
+      object-fit: cover;
+    }
   }
 }
 .reviews-top {

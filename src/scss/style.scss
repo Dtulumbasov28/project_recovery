@@ -54,7 +54,7 @@ $maxWidthContainer: 1584;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 168;
-$containerPaddingSmall: 96;
+$containerPaddingSmall: 56;
 $containerPaddingSmallXS: 24;
 
 // Ширина срабатывания первого брейкпоинта
@@ -64,10 +64,11 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 $pc: em(
   $containerWidth
 ); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
-$notebook: em(1239.98); // Ноутбук
+$notebook: em(1399.98); // Ноутбук
+$netbook: em(1279.98); // Ноутбук
 $tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
 $mobile: em(767.98); // Телефоны L
-$mobileSmall: em(479.98); // Телефоны S
+$mobileSmall: em(574.98); // Телефоны S
 
 // Тип адаптива:
 // 1 = отзывчивость (у контейнера нет брейкпоинтов),
@@ -103,6 +104,10 @@ body {
   > main {
     flex: 1 1 auto;
     margin-top: 156px;
+
+    @media (max-width: $mobile) {
+      margin-top: 100px;
+    }
   }
   // Фикс для слайдеров
   > * {
@@ -129,7 +134,7 @@ body {
       padding: 0 rem(math.div($containerPadding, 2));
     }
 
-    @media (max-width: $notebook) {
+    @media (max-width: $netbook) {
       padding: 0 rem(math.div($containerPaddingSmall, 2));
     }
     @media (max-width: $mobileSmall) {
