@@ -4,16 +4,16 @@ section {
   margin: 100px 0;
 }
 .wrapper {
-  position: relative;
-  z-index: 22;
-  background: url(@img/main/main_back-1.jpg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 100% 1100px;
+  //   position: relative;
+  //   z-index: 22;
+  //   background: url(@img/main/main_back-1.jpg);
+  //   background-position: 0 0;
+  //   background-repeat: no-repeat;
+  //   background-size: 100% 1100px;
 
-  @media (max-width: $notebook) {
-    background-size: 100% calc(156px + 763px);
-  }
+  //   @media (max-width: $notebook) {
+  //     background-size: 100% calc(156px + 763px);
+  //   }
 }
 .gradient {
   background: linear-gradient(90deg, #e5007d 0%, #008bd2 100%);
@@ -68,7 +68,19 @@ section {
 .title {
   font-family: $fontFamilyOsw;
   font-size: 45px;
+  line-height: 63px;
   text-transform: uppercase;
+
+  @media (max-width: $netbook) {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+  @media (max-width: $mobile) {
+    font-size: 34px;
+  }
+  @media (max-width: $mobileSmall) {
+    font-size: 28px;
+  }
 
   & span {
     color: $colorBlue;
