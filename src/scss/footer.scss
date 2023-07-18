@@ -15,13 +15,33 @@
     display: flex;
     flex-wrap: wrap;
     padding: 60px 0;
+
+    @media (max-width: $mobile) {
+      flex-direction: column-reverse;
+    }
   }
 
   // .footer__col-form
 
   &__col-form {
+    position: relative;
+    z-index: 2;
     margin-right: 290px;
     max-width: calc(50% - 145px);
+
+    @media (max-width: $netbook) {
+      max-width: calc(50% - 90px);
+      margin-right: 180px;
+    }
+
+    @media (max-width: $tablet) {
+      max-width: calc(50% - 20px);
+      margin-right: 40px;
+    }
+    @media (max-width: $mobile) {
+      max-width: 100%;
+      margin-right: unset;
+    }
   }
 
   // .footer__form
@@ -59,6 +79,16 @@
     z-index: 1;
     max-width: calc(50% - 145px);
 
+    @media (max-width: $netbook) {
+      max-width: calc(50% - 90px);
+    }
+    @media (max-width: $tablet) {
+      max-width: calc(50% - 20px);
+    }
+    @media (max-width: $mobile) {
+      max-width: 100%;
+    }
+
     &::before {
       content: "Контакты";
       color: $colorGray;
@@ -74,6 +104,10 @@
       left: -120px;
       top: 0;
       z-index: -1;
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
     }
   }
 

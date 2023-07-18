@@ -18,6 +18,17 @@
       1px -1px 0 #cddce8,
       -1px 1px 0 #cddce8,
       -1px -1px 0 #cddce8;
+
+    @media (max-width: $pc) {
+      font-size: 150px;
+    }
+    @media (max-width: $notebook) {
+      font-size: 100px;
+      bottom: -20px;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
   // .aboutus__container
 
@@ -31,6 +42,10 @@
     z-index: 1;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+    }
   }
 
   // .aboutus__logo
@@ -39,6 +54,10 @@
     display: flex;
     margin-right: 46px;
     flex-shrink: 0;
+
+    @media (max-width: $notebook) {
+      margin-right: 20px;
+    }
   }
 
   // .aboutus__logo-link
@@ -56,6 +75,13 @@
   &__text {
     max-width: 920px;
     margin-right: auto;
+
+    @media (max-width: $mobile) {
+      order: 1;
+      width: 100%;
+      max-width: unset;
+      margin-top: 20px;
+    }
   }
 
   // .aboutus__desc
@@ -67,6 +93,19 @@
     line-height: 55px;
     text-transform: uppercase;
     margin-bottom: 18px;
+
+    @media (max-width: $notebook) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $netbook) {
+      font-size: 30px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 27px;
+      line-height: 1.5;
+    }
   }
 
   // .aboutus__link
@@ -113,6 +152,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-left: 30px;
+
+    @media (max-width: $notebook) {
+      margin-left: 20px;
+    }
   }
 
   // .aboutus__socials-link

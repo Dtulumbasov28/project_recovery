@@ -38,10 +38,10 @@ function initSliders() {
     // для конкретного случая
     modules: [Navigation],
     observer: true,
-    observeParents: true,
     slidesPerView: "auto",
     centeredSlides: true,
     spaceBetween: 22,
+    observeParents: true,
     speed: 800,
     loop: true,
     lazy: true,
@@ -53,27 +53,19 @@ function initSliders() {
     },
 
     // Брейкпоинты
-    /*
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
-				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
-			},
-			*/
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        centeredSlides: false,
+        spaceBetween: 14,
+        autoHeight: true,
+      },
+      575: {
+        slidesPerView: "auto",
+        centeredSlides: true,
+      },
+    },
   });
   var reviewSlider = new Swiper(".reviews__slider", {
     // Указываем скласс нужного слайдера
@@ -81,12 +73,14 @@ function initSliders() {
     // для конкретного случая
     modules: [Navigation],
     observer: true,
-    observeParents: true,
     slidesPerView: "auto",
     centeredSlides: true,
-    spaceBetween: 24,
+    spaceBetween: 22,
+    observeParents: true,
     speed: 800,
     loop: true,
+    lazy: true,
+
     // Кнопки "влево/вправо"
     navigation: {
       prevEl: ".reviews-prev",
@@ -94,29 +88,19 @@ function initSliders() {
     },
 
     // Брейкпоинты
-    /*
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
-				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
-			},
-			*/
-    // События
-    on: {},
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        centeredSlides: false,
+        spaceBetween: 14,
+        autoHeight: true,
+      },
+      575: {
+        slidesPerView: "auto",
+        centeredSlides: true,
+      },
+    },
   });
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)

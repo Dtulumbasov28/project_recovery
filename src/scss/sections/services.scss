@@ -19,6 +19,10 @@
       position: absolute;
       left: 0;
       bottom: -125px;
+
+      @media (max-width: $netbook) {
+        display: none;
+      }
     }
     &:after {
       content: "Rehab Recovery";
@@ -30,6 +34,21 @@
       font-size: 210px;
       text-transform: uppercase;
       color: $colorGray;
+
+      @media (max-width: $pc) {
+        font-size: 170px;
+      }
+      @media (max-width: $notebook) {
+        font-size: 140px;
+      }
+      @media (max-width: $netbook) {
+        font-size: 140px;
+        right: unset;
+        left: 0;
+      }
+      @media (max-width: $tablet) {
+        display: none;
+      }
     }
   }
 
@@ -76,6 +95,11 @@
 
     @media (max-width: $tablet) {
       flex-direction: column;
+      margin-bottom: 100px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 50px;
     }
   }
 
@@ -89,6 +113,9 @@
     @media (max-width: $tablet) {
       flex-direction: row;
     }
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
   }
   // .services__bottom-left
 
@@ -99,10 +126,6 @@
 
     & .services__bottom-elem {
       max-height: 520px;
-
-      @media (max-width: $tablet) {
-        max-height: 300px;
-      }
     }
 
     & .services__heading {
@@ -120,6 +143,11 @@
     & .services__bottom-elem {
       &:first-child {
         max-height: 350px;
+
+        @media (max-width: $tablet) {
+          max-height: 100%;
+        }
+
         & .services__heading {
           &::after {
             margin-left: 20px;
@@ -128,6 +156,10 @@
       }
       &:last-child {
         max-height: 240px;
+
+        @media (max-width: $tablet) {
+          max-height: 100%;
+        }
 
         & .services__heading {
           flex-direction: column;
@@ -148,6 +180,10 @@
       &:first-child {
         max-height: 240px;
 
+        @media (max-width: $tablet) {
+          max-height: 100%;
+        }
+
         & .services__heading {
           &::after {
             margin-left: 20px;
@@ -157,9 +193,17 @@
       &:last-child {
         max-height: 350px;
 
+        @media (max-width: $tablet) {
+          max-height: 100%;
+        }
+
         & .services__heading {
           &::after {
             margin-left: 20px;
+
+            @media (max-width: $tablet) {
+              margin-left: 0;
+            }
           }
         }
       }
@@ -171,6 +215,10 @@
   &__buttons {
     margin-bottom: calc(50px - 12px);
     padding: 12px 0 0 12px;
+
+    @media (max-width: $tablet) {
+      margin-top: 18px;
+    }
   }
 
   // .services__bottom-elem
@@ -181,6 +229,13 @@
     width: 100%;
     height: 100%;
     padding: 12px;
+
+    @media (max-width: $tablet) {
+      height: 300px;
+    }
+    @media (max-width: $mobile) {
+      height: 340px;
+    }
   }
 
   // .services__bottom-link
@@ -213,6 +268,15 @@
     align-items: center;
     margin: 14px 30px 0 0;
     max-width: 360px;
+    @media (max-width: $netbook) and (min-width: $tablet) {
+      font-size: 24px;
+      margin: 14px;
+    }
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 14px 14px 0px 14px;
+    }
 
     &::after {
       content: "";
@@ -222,6 +286,14 @@
       height: 50px;
       flex-shrink: 0;
       border-radius: 50%;
+
+      @media (max-width: $tablet) {
+        margin-top: 20px;
+      }
+      @media (max-width: $mobile) {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 
@@ -232,6 +304,8 @@
 }
 
 .services-other {
+  position: relative;
+  z-index: 2;
   // .services-other__title
 
   &__title {
@@ -262,6 +336,14 @@
     padding: 11px 20px;
     background-color: $colorGray;
     border-radius: 20px;
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: 10px;
+      padding: 10px;
+    }
   }
 }
 
@@ -275,6 +357,7 @@
 
     @media (max-width: $tablet) {
       margin-bottom: 40px;
+      font-size: 17px;
     }
   }
 
@@ -289,6 +372,12 @@
   &__img {
     display: flex;
     margin-right: 30px;
+
+    @media (max-width: $mobile) {
+      margin-right: 0;
+      flex-wrap: wrap;
+      margin: -10px;
+    }
   }
 
   // .services-choice__country
@@ -298,8 +387,15 @@
     width: 50px;
     height: 30px;
 
+    @media (max-width: $mobile) {
+      margin: 10px;
+    }
+
     &:not(:last-child) {
       margin-right: 20px;
+      @media (max-width: $mobile) {
+        margin-right: 10px;
+      }
     }
   }
 
@@ -307,6 +403,10 @@
 
   &__link {
     font-size: 14px;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
 
     &:not(:last-child) {
       margin-right: 30px;

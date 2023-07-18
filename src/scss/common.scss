@@ -1,7 +1,18 @@
 // Заголовки, общие БЄМ блоки и проче...
 section {
   background-color: #fff;
-  margin: 100px 0;
+  padding: 100px 0;
+
+  @media (max-width: $tablet) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 50px 0;
+  }
+  @media (max-width: $mobileSmall) {
+    padding: 30px 0;
+  }
 }
 .wrapper {
   //   position: relative;
@@ -43,7 +54,7 @@ section {
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   background: #f2edeb;
   padding: 17px 30px;
   border-radius: $borderRadiusSmall;
@@ -93,6 +104,27 @@ section {
   margin-bottom: 30px;
 }
 
+.swiper__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+
+  @media (max-width: $mobileSmall) {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: unset;
+    padding: 0 24px;
+  }
+
+  & button:first-child {
+    margin-right: 10px;
+  }
+}
+
 .swiper-button {
   content: "";
   background: url("@img/arrow.svg") center center no-repeat;
@@ -101,6 +133,14 @@ section {
   height: 50px;
   border-radius: 50%;
   border: 1px solid $mainColor;
+
+  @media (max-width: $mobileSmall) {
+    border: unset;
+    background: $colorYellow url("@img/arrow.svg") center center no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+  }
 }
 .swiper-button-prev {
   transform: rotate(180deg);

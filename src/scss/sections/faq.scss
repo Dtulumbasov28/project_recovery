@@ -15,6 +15,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
 
   // .faq__title
@@ -32,7 +36,16 @@
   // .faq__buttons
 
   &__buttons {
-    margin-top: auto;
+    margin: auto 0 0 20px;
+    white-space: nowrap;
+
+    @media (max-width: $tablet) {
+      margin: 20px 0 0 0;
+    }
+
+    @media (max-width: $mobileSmall) {
+      display: none;
+    }
   }
 
   // .faq__bottom
@@ -73,11 +86,20 @@
   &__title {
     font-size: 17px;
     font-weight: 500;
+    text-align: left;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 35px 0;
+
+    @media (max-width: $mobileSmall) {
+      padding: 20px 0;
+    }
+
+    @media (max-width: $mobileSmallXS) {
+      font-size: 16px;
+    }
 
     &::after {
       content: "";
@@ -86,7 +108,8 @@
       width: 16px;
       height: 9px;
       transition: all 0.3s;
-      margin-right: 20px;
+      margin: 0 20px;
+      flex: 0 0 auto;
     }
 
     &._spoller-active {
@@ -100,5 +123,6 @@
 
   &__body {
     margin-bottom: 20px;
+    line-height: 1.5;
   }
 }

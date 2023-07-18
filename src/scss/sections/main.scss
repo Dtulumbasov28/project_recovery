@@ -54,9 +54,13 @@
     position: absolute;
     top: 60px;
     width: calc(100% - 168px);
+    height: 700px;
    //  height: 100%;
     border: 10px solid #fff;
 
+    @media (max-width: $netbook) {
+      height: 500px;
+    }
     @media (max-width: $mobileSmall) {
       height: 300px;
     }

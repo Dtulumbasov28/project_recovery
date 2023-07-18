@@ -8,13 +8,31 @@
 
   &__body {
     padding: 0px 90px;
+
+    @media (max-width: $notebook) {
+      padding: 0;
+    }
   }
 
   // .whyus__list
 
   &__list {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: -20px;
+
+    @media (max-width: $notebook) {
+      margin: -10px;
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $mobileSmall) {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0;
+    }
   }
 
   // .whyus__item
@@ -23,7 +41,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
+    padding: 20px;
+
+    @media (max-width: $notebook) {
+      padding: 10px;
+    }
+    @media (max-width: $mobileSmall) {
+      padding: 0;
+      margin-bottom: 50px;
+    }
   }
 
   // .whyus__num
@@ -59,6 +87,7 @@
   // .whyus__button
 
   &__button {
+    white-space: nowrap;
   }
 }
 .button {
