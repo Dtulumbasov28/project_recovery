@@ -150,7 +150,7 @@
       z-index: 1;
 
       &._spoller-active {
-        background-color: $colorGray;
+        background-color: $colorGrayBlue;
 
         &::after {
           transform: scale(1, -1);
@@ -244,7 +244,7 @@
       left: 0;
       width: max-content;
       max-width: 300px;
-      background-color: $colorGray;
+      background-color: $colorGrayBlue;
     }
     @media (max-width: $mobile) {
       margin-bottom: 10px;
@@ -354,7 +354,7 @@
   transition: all 0.3s;
 
   &._spoller-active {
-    background-color: $colorGray;
+    background-color: $colorGrayBlue;
     transform: scale(1, -1);
     transition: all 0.3s;
   }

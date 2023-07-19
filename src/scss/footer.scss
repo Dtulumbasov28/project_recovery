@@ -2,7 +2,7 @@
 //====================================================================================================
 
 .footer {
-  background: $colorGray;
+  background: $colorGrayBlue;
 
   // .footer__container
 
@@ -18,6 +18,7 @@
 
     @media (max-width: $mobile) {
       flex-direction: column-reverse;
+      padding: 50px 0;
     }
   }
 
@@ -30,8 +31,8 @@
     max-width: calc(50% - 145px);
 
     @media (max-width: $netbook) {
-      max-width: calc(50% - 90px);
-      margin-right: 180px;
+      max-width: calc(50% - 40px);
+      margin-right: 80px;
     }
 
     @media (max-width: $tablet) {
@@ -80,18 +81,19 @@
     max-width: calc(50% - 145px);
 
     @media (max-width: $netbook) {
-      max-width: calc(50% - 90px);
+      max-width: calc(50% - 40px);
     }
     @media (max-width: $tablet) {
       max-width: calc(50% - 20px);
     }
     @media (max-width: $mobile) {
       max-width: 100%;
+      margin-bottom: 50px;
     }
 
     &::before {
       content: "Контакты";
-      color: $colorGray;
+      color: $colorGrayBlue;
       font-family: $fontFamilyOsw;
       font-size: 176px;
       text-transform: uppercase;
@@ -126,7 +128,7 @@
 
     &::placeholder {
       font-size: 16px;
-      color: #808080;
+      color: $colorGray;
     }
   }
 
@@ -224,6 +226,10 @@ input[type="checkbox"] {
 
   &__title {
     margin-bottom: 50px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
   }
 
   // .footer-info__select
@@ -253,6 +259,10 @@ input[type="checkbox"] {
 
   &__phone {
     margin-bottom: 40px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
   }
 
   // .footer-info__address
@@ -263,6 +273,10 @@ input[type="checkbox"] {
     line-height: 30px;
     display: block;
     margin-bottom: 20px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 15px;
+    }
   }
 
   // .footer-info__socials
@@ -334,6 +348,11 @@ input[type="checkbox"] {
 
   &__logo {
     margin-right: 30px;
+    flex: 1 0 70px;
+
+    @media (max-width: $mobileSmallXS) {
+      margin-right: 15px;
+    }
   }
 
   // .footer-bottom__text
@@ -349,18 +368,29 @@ input[type="checkbox"] {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media (max-width: $mobileSmallXS) {
+      font-size: 13px;
+      line-height: 20px;
+    }
   }
 
   // .footer-bottom__links
 
   &__links {
     font-size: 14px;
+
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   // .footer-bottom__link
 
   &__link {
     text-decoration: underline !important;
+    line-height: 30px;
     &:not(:last-child) {
       margin-right: 10px;
     }

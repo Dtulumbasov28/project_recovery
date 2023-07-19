@@ -1,6 +1,6 @@
 .centers {
   @media (max-width: $mobileSmall) {
-    background: $colorGray;
+    background: $colorGrayBlue;
   }
 
   // .centers__container
@@ -113,7 +113,7 @@
   // .centers__address
 
   &__address {
-    color: #808080;
+    color: $colorGray;
     line-height: 22px;
     &::before {
       background-image: url(@img/icon_map.svg);
@@ -125,7 +125,7 @@
   // .centers__phone
 
   &__phone {
-    color: #808080;
+    color: $colorGray;
     line-height: 22px;
     &::before {
       background-image: url(@img/icon_phone.svg);

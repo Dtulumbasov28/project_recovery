@@ -33,7 +33,7 @@
       font-family: $fontFamilyOsw;
       font-size: 210px;
       text-transform: uppercase;
-      color: $colorGray;
+      color: $colorGrayBlue;
 
       @media (max-width: $pc) {
         font-size: 170px;
@@ -334,7 +334,7 @@
   &__button {
     font-size: 14px;
     padding: 11px 20px;
-    background-color: $colorGray;
+    background-color: $colorGrayBlue;
     border-radius: 20px;
 
     @media (max-width: $mobile) {

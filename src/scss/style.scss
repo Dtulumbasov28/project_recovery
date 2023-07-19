@@ -8,6 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,regular,500&display=swap);
 
+
 // Подключить если есть локальные файлы шрифтов
 //@import "fonts/fonts";
 
@@ -23,8 +24,9 @@
   --color-black: #000;
   --color-white: #fff;
   --color-blue: #0289cc;
-  --color-gray: #eaeff3;
-  --color-gray-hover: #dde8f1;
+  --color-gray: #808080;
+  --color-gray-blue: #eaeff3;
+  --color-gray-blue-hover: #dde8f1;
   --color-yellow: #f8c630;
   --border-radius-small: 3px;
 }
@@ -39,7 +41,8 @@ $mainColor: var(--color-black); // Цвет шрифта по умолчанию
 $colorWhite: var(--color-white);
 $colorBlue: var(--color-blue);
 $colorGray: var(--color-gray);
-$colorGrayHover: var(--color-gray-hover);
+$colorGrayBlue: var(--color-gray-blue);
+$colorGrayBlueHover: var(--color-gray-blue-hover);
 $colorYellow: var(--color-yellow);
 // Другое
 $borderRadiusSmall: var(--border-radius-small);
@@ -85,6 +88,7 @@ $responsiveType: 1;
 // Стили тега BODY ============================================================================================================================================================================================================================================================================================================================================================================================
 
 body {
+  line-height: 1.5;
   // Скролл заблокирован
   .lock & {
     overflow: hidden;
@@ -191,3 +195,6 @@ body {
 @import "sections/aboutus";
 @import "sections/reviews";
 @import "sections/faq";
+@import "sections/country-main";
+@import "sections/country-services";
+@import "sections/program";

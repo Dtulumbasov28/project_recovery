@@ -1,4 +1,30 @@
 // Заголовки, общие БЄМ блоки и проче...
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontFamilyOsw;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 45px;
+  line-height: 1.15;
+
+  @media (max-width: $netbook) {
+    font-size: 40px;
+  }
+  @media (max-width: $tablet) {
+    font-size: 36px;
+  }
+  @media (max-width: $mobileSmall) {
+    font-size: 28px;
+  }
+}
 section {
   background-color: #fff;
   padding: 100px 0;
@@ -185,7 +211,7 @@ section {
 
   .header__menu-link {
     &:hover {
-      background-color: $colorGray;
+      background-color: $colorGrayBlue;
     }
   }
 
@@ -215,7 +241,7 @@ section {
 
   .services-other__button {
     &:hover {
-      background-color: $colorGrayHover;
+      background-color: $colorGrayBlueHover;
     }
   }
 
@@ -252,6 +278,17 @@ section {
     &:hover {
       transition: all 0.3s;
       border-bottom: 1px solid rgba($color: #000000, $alpha: 0.6);
+    }
+  }
+
+  .country-services__link {
+    &:hover {
+      color: $colorYellow;
+
+      &::before {
+        background: $colorYellow center center no-repeat;
+        transition: all 0.3s;
+      }
     }
   }
 

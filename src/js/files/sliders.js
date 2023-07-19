@@ -102,6 +102,39 @@ function initSliders() {
       },
     },
   });
+  var countryMainSlider = new Swiper(".country-main__bottom-slider", {
+    // Указываем скласс нужного слайдера
+    // Подключаем модули слайдера
+    // для конкретного случая
+    modules: [Navigation],
+    observer: true,
+    spaceBetween: 24,
+    observeParents: true,
+    speed: 800,
+    lazy: true,
+
+    // Кнопки "влево/вправо"
+    navigation: {
+      prevEl: ".country-main-prev",
+      nextEl: ".country-main-next",
+    },
+
+    // Брейкпоинты
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      575: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1440: {
+        slidesPerView: 4,
+      },
+    },
+  });
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {
