@@ -135,6 +135,68 @@ function initSliders() {
       },
     },
   });
+  var accommodationsSlider = new Swiper(".accommodations__slider", {
+    // Указываем скласс нужного слайдера
+    // Подключаем модули слайдера
+    // для конкретного случая
+    modules: [Navigation],
+    observer: true,
+    spaceBetween: 24,
+    slidesPerView: "auto",
+    slideToClickedSlide: true,
+    observeParents: true,
+    speed: 800,
+    lazy: true,
+    autoHeight: true,
+    // Кнопки "влево/вправо"
+    navigation: {
+      prevEl: ".accommodations-prev",
+      nextEl: ".accommodations-next",
+    },
+
+    // Брейкпоинты
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        slideToClickedSlide: false,
+      },
+      768: {
+        slidesPerView: "auto",
+        slideToClickedSlide: true,
+      },
+    },
+  });
+  var specialistsSlider = new Swiper(".specialists__slider", {
+    // Указываем скласс нужного слайдера
+    // Подключаем модули слайдера
+    // для конкретного случая
+    modules: [Navigation],
+    enabled: false,
+    observer: true,
+    spaceBetween: 24,
+    slidesPerView: "auto",
+    observeParents: true,
+    speed: 800,
+    lazy: true,
+    autoHeight: true,
+    // Кнопки "влево/вправо"
+    navigation: {
+      prevEl: ".accommodations-prev",
+      nextEl: ".accommodations-next",
+    },
+
+    // Брейкпоинты
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        enabled: true,
+      },
+      992: {
+        slidesPerView: 1,
+        enabled: false,
+      },
+    },
+  });
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

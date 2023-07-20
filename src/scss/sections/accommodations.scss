@@ -1,0 +1,172 @@
+.accommodations {
+  @media (max-width: $mobileSmall) {
+    background: $colorGrayBlue;
+  }
+  // .accommodations__container
+
+  &__container {
+  }
+
+  // .accommodations__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  // .accommodations__title
+
+  &__title {
+  }
+
+  // .accommodations__navigation
+
+  &__navigation {
+    margin-bottom: unset;
+    margin-left: 30px;
+
+    @media (max-width: $mobileSmall) {
+      margin: unset;
+      top: 100px;
+    }
+  }
+
+  // .accommodations__slider
+
+  &__slider {
+    position: relative;
+  }
+
+  // .accommodations__slider-wrapper
+
+  &__slider-wrapper {
+  }
+
+  // .accommodations__slide
+
+  &__slide {
+    max-width: 70%;
+
+    @media (max-width: $mobile) {
+      max-width: unset;
+    }
+
+    &:nth-child(1) {
+      & .accommodations__slide-heading::before {
+        background: url("@img/accommodations/accommodations_1.svg") center
+          center no-repeat;
+        background-size: contain;
+      }
+    }
+    &:nth-child(2) {
+      & .accommodations__slide-heading::before {
+        background: url("@img/accommodations/accommodations_2.svg") center
+          center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  // .accommodations__slide-img
+
+  &__slide-img {
+    height: 100%;
+    max-height: 60%;
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    @media (max-width: $tablet) {
+      max-height: 50%;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 14px;
+    }
+    @media (max-width: $mobileSmall) {
+      max-height: unset;
+      height: 200px;
+    }
+
+    & img {
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+  }
+
+  // .accommodations__slide-text
+
+  &__slide-text {
+    position: relative;
+    margin: 0 85px 0 135px;
+
+    @media (max-width: $tablet) {
+      margin: unset;
+    }
+  }
+
+  // .accommodations__slide-heading
+
+  &__slide-heading {
+    font-family: $fontFamilyMont;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    @media (max-width: $tablet) {
+      display: flex;
+      align-items: center;
+    }
+
+    &::before {
+      content: "";
+
+      width: 70px;
+      height: 50px;
+      flex-shrink: 0;
+      position: absolute;
+      left: -125px;
+      top: calc(50% - 25px);
+
+      @media (max-width: $tablet) {
+        position: unset;
+        left: unset;
+        top: unset;
+        margin-right: 20px;
+      }
+      @media (max-width: $mobileSmall) {
+        width: 40px;
+        height: 30px;
+      }
+    }
+  }
+
+  // .accommodations__slide-desc
+
+  &__slide-desc {
+    line-height: 1.75;
+  }
+}
+.centers {
+  // .centers__slider-navigation
+
+  &__slider-navigation {
+  }
+}
+.swiper {
+  // .swiper__navigation
+
+  &__navigation {
+  }
+}
+.centers-prev {
+}
+.swiper-button {
+}
+.swiper-button-prev {
+}
+.centers-next {
+}
+.swiper-button-next {
+}

@@ -1,0 +1,130 @@
+.specialists {
+  // .specialists__container
+
+  &__container {
+  }
+
+  // .specialists__body
+
+  &__body {
+  }
+
+  // .specialists__title
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  // .specialists__desc
+
+  &__desc {
+    max-width: 700px;
+    margin-bottom: 40px;
+  }
+
+  // .specialists__slider
+
+  &__slider {
+  }
+
+  // .specialists__list
+
+  &__list {
+    display: grid !important;
+    height: 100% !important;
+    grid-template-columns: repeat(2, 1fr);
+    margin: -32px;
+
+    @media (max-width: $netbook) {
+      margin: -16px;
+    }
+    @media (max-width: $tablet) {
+      display: flex !important;
+      height: unset !important;
+      margin: 0;
+    }
+  }
+
+  // .specialists__item
+
+  &__item {
+    max-width: 730px;
+    display: flex;
+    align-items: start;
+    margin: 32px;
+    
+
+    @media (max-width: $netbook) {
+      margin: 16px;
+    }
+    @media (max-width: $tablet) {
+      margin: 0;
+    }
+  }
+
+  // .specialists__item-img
+
+  &__item-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 36px;
+
+    @media (max-width: $netbook) and (min-width: $tablet) {
+      width: 140px;
+      height: 140px;
+      margin-right: 20px;
+    }
+
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  // .specialists__item-text
+
+  &__item-text {
+  }
+
+  // .specialists__item-heading
+
+  &__item-heading {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  // .specialists__item-position
+
+  &__item-position {
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+
+    &:after {
+      content: "";
+      width: 120px;
+      height: 3px;
+      background-color: $colorBlue;
+      margin: 16px 0 14px 0;
+    }
+  }
+
+  // .specialists__item-desc
+
+  &__item-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: $colorGray;
+  }
+
+  // .specialists__navigation
+
+  &__navigation {
+    display: none;
+  }
+}

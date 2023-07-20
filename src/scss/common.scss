@@ -34,10 +34,10 @@ section {
   }
 
   @media (max-width: $mobile) {
-    padding: 50px 0;
+    padding: 40px 0;
   }
   @media (max-width: $mobileSmall) {
-    padding: 30px 0;
+    padding: 20px 0;
   }
 }
 .wrapper {
@@ -112,12 +112,12 @@ section {
     font-size: 40px;
     line-height: 1.25;
   }
-  @media (max-width: $mobile) {
-    font-size: 34px;
-  }
-  @media (max-width: $mobileSmall) {
-    font-size: 28px;
-  }
+  // @media (max-width: $mobile) {
+  //   font-size: 34px;
+  // }
+  // @media (max-width: $mobileSmall) {
+  //   font-size: 28px;
+  // }
 
   & span {
     color: $colorBlue;
@@ -291,7 +291,20 @@ section {
       }
     }
   }
-
+  .program__button {
+    &:hover {
+      background: $colorYellow;
+      color: #fff;
+    }
+  }
+  .accommodations__slide-img {
+    &:hover {
+      & img {
+        transform: scale(1.01);
+        transition: all 0.3s;
+      }
+    }
+  }
   .footer-bottom__link {
     &:hover {
       color: $colorYellow;

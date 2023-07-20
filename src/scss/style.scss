@@ -139,7 +139,7 @@ body {
       padding: 0 rem(math.div($containerPadding, 2));
     }
 
-    @media (max-width: $netbook) {
+    @media (max-width: $notebook) {
       padding: 0 rem(math.div($containerPaddingSmall, 2));
     }
     @media (max-width: $mobileSmall) {
@@ -198,3 +198,6 @@ body {
 @import "sections/country-main";
 @import "sections/country-services";
 @import "sections/program";
+@import "sections/accommodations";
+@import "sections/cost";
+@import "sections/specialists";
