@@ -27,14 +27,14 @@ h1 {
 }
 section {
   background-color: #fff;
-  padding: 100px 0;
+  padding: 50px 0;
 
   @media (max-width: $tablet) {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 
   @media (max-width: $mobile) {
-    padding: 40px 0;
+    padding: 30px 0;
   }
   @media (max-width: $mobileSmall) {
     padding: 20px 0;
@@ -177,6 +177,48 @@ section {
   max-height: 100px;
 }
 
+.main-screen {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  //.main-screen__country
+  &__country {
+    @media (max-width: $tablet) {
+      & > div:nth-child(1) {
+        order: 0;
+      }
+      & > div:nth-child(2) {
+        order: 2;
+      }
+      & > div:nth-child(3) {
+        order: 1;
+      }
+    }
+  }
+
+  //.main-screen__center
+  &__center {
+    @media (max-width: $tablet) {
+      & > div:nth-child(1) {
+        order: 0;
+      }
+      & > div:nth-child(2) {
+        order: 2;
+      }
+      & > div:nth-child(3) {
+        order: 1;
+      }
+      & > div:nth-child(4) {
+        order: 3;
+      }
+    }
+  }
+
+  //.main-screen__center
+  &__center {
+  }
+}
 @media (hover: hover) {
   button,
   a,
@@ -301,6 +343,16 @@ section {
     &:hover {
       & img {
         transform: scale(1.01);
+        transition: all 0.3s;
+      }
+    }
+  }
+  .center-head__link {
+    &:hover {
+      color: $mainColor;
+
+      &:before {
+        transform: rotate(180deg) translateX(3px);
         transition: all 0.3s;
       }
     }

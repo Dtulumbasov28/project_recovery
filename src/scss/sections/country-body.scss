@@ -1,0 +1,27 @@
+.country-body {
+  padding: 65px 0 30px 0;
+
+  @media (max-width: $tablet) {
+    padding: 15px 0 15px 0;
+  }
+
+  // .country-body__container
+  &__container {
+  }
+
+  // .country-body__text
+
+  &__text {
+    color: #666;
+    column-width: 50%;
+    column-count: 2;
+    column-gap: 70px;
+    position: relative;
+
+    @media (max-width: $tablet) {
+      column-width: unset;
+      column-count: unset;
+      column-gap: unset;
+    }
+  }
+}

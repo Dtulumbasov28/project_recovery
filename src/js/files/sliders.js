@@ -8,7 +8,7 @@
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
 
-import Swiper, { Navigation } from "swiper";
+import Swiper, { Navigation, Thumbs } from "swiper";
 
 /*
 Основниые модули слайдера:
@@ -102,7 +102,7 @@ function initSliders() {
       },
     },
   });
-  var countryMainSlider = new Swiper(".country-main__bottom-slider", {
+  var benefitsSlider = new Swiper(".benefits__slider", {
     // Указываем скласс нужного слайдера
     // Подключаем модули слайдера
     // для конкретного случая
@@ -115,8 +115,8 @@ function initSliders() {
 
     // Кнопки "влево/вправо"
     navigation: {
-      prevEl: ".country-main-prev",
-      nextEl: ".country-main-next",
+      prevEl: ".benefits-prev",
+      nextEl: ".benefits-next",
     },
 
     // Брейкпоинты
@@ -181,8 +181,8 @@ function initSliders() {
     autoHeight: true,
     // Кнопки "влево/вправо"
     navigation: {
-      prevEl: ".accommodations-prev",
-      nextEl: ".accommodations-next",
+      prevEl: ".specialists-prev",
+      nextEl: ".specialists-next",
     },
 
     // Брейкпоинты
@@ -196,6 +196,77 @@ function initSliders() {
         enabled: false,
       },
     },
+  });
+  var CenterThumbSlider = new Swiper(".center-thumb__slider", {
+    // Указываем скласс нужного слайдера
+    // Подключаем модули слайдера
+    // для конкретного случая
+    modules: [Navigation],
+    observer: true,
+    slidesPerView: 2,
+    spaceBetween: 24,
+    observeParents: true,
+    speed: 800,
+    lazy: true,
+    loop: true,
+    slideToClickedSlide: true,
+
+    // Кнопки "влево/вправо"
+    navigation: {
+      prevEl: ".center-prev",
+      nextEl: ".center-next",
+    },
+
+    // Брейкпоинты
+    breakpoints: {
+      1300: {
+        slidesPerView: 3,
+      },
+      1600: {
+        slidesPerView: 4,
+      },
+      2000: {
+        slidesPerView: 5,
+      },
+
+    },
+  });
+  var CenterSlider = new Swiper(".center-gallery__slider", {
+    // Указываем скласс нужного слайдера
+    // Подключаем модули слайдера
+    // для конкретного случая
+    modules: [Navigation, Thumbs],
+    observer: true,
+    slidesPerView: 1,
+    spaceBetween: 24,
+    observeParents: true,
+    speed: 800,
+    lazy: true,
+    loop: true,
+    navigation: {
+      prevEl: ".center-prev",
+      nextEl: ".center-next",
+    },
+    thumbs: {
+      swiper: CenterThumbSlider,
+    },
+    // Кнопки "влево/вправо"
+    // navigation: {
+    //   prevEl: ".specialists-prev",
+    //   nextEl: ".specialists-next",
+    // },
+
+    // Брейкпоинты
+    // breakpoints: {
+    //   0: {
+    //     slidesPerView: 1,
+    //     enabled: true,
+    //   },
+    //   992: {
+    //     slidesPerView: 1,
+    //     enabled: false,
+    //   },
+    // },
   });
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
