@@ -183,6 +183,7 @@ body {
 // Подключение стилей отдельных блоков
 @import "header";
 @import "footer";
+@import "sections/footer-contacts";
 
 // Подключение стилей отдельных страниц
 @import "home";
@@ -205,3 +206,5 @@ body {
 @import "sections/cost";
 @import "sections/specialists";
 @import "sections/center-main";
+@import "sections/contacts";
+@import "sections/article";

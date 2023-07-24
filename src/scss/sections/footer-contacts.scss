@@ -1,0 +1,226 @@
+.footer-contacts {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(480px + 180px);
+    background-color: $colorGrayBlue;
+
+    @media (max-width: $tablet) {
+      height: 100%;
+    }
+  }
+  // .footer-contacts__container
+
+  &__container {
+  }
+
+  // .footer-contacts__body
+
+  &__body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+
+    @media (max-width: $tablet) {
+      padding: 30px 0;
+    }
+  }
+
+  // .footer-contacts__form
+
+  &__form {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+
+  // .footer-contacts__form-headline
+
+  &__form-headline {
+    max-width: 510px;
+
+    @media (max-width: $tablet) {
+      max-width: unset;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 18px;
+    }
+  }
+
+  // .footer-contacts__form-desc
+
+  &__form-desc {
+    @media (max-width: $mobile) {
+      margin-bottom: 18px;
+    }
+  }
+
+  // .footer-contacts__form-body
+
+  &__form-body {
+  }
+
+  // .footer-contacts__input
+
+  &__input {
+    max-width: 510px;
+
+    @media (max-width: $netbook) {
+      max-width: 400px;
+    }
+
+    @media (max-width: $tablet) {
+      max-width: 90%;
+    }
+    @media (max-width: $mobile) {
+      max-width: 100%;
+    }
+  }
+
+  // .footer-contacts__input
+
+  &__input,
+  &__input-textarea {
+    border: 1px solid #b9ccdb;
+
+    &:focus {
+      border: 1px solid #b9ccdb;
+    }
+  }
+
+  // .footer-contacts__input-textarea
+  &__input-textarea {
+    max-width: 780px;
+
+    @media (max-width: $netbook) {
+      max-width: 500px;
+    }
+
+    @media (max-width: $tablet) {
+      max-width: 90%;
+    }
+    @media (max-width: $mobile) {
+      max-width: 100%;
+    }
+  }
+
+  // .footer-contacts__chekbox-input
+
+  &__checkbox-input {
+  }
+  // .footer-contacts__chekbox-indicator
+
+  &__checkbox-indicator {
+    border: 1px solid #b9ccdb;
+  }
+
+  // .footer-contacts__img
+
+  &__img {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 1035px;
+    max-height: 850px;
+
+    @media (max-width: $pc) {
+      right: -200px;
+    }
+    @media (max-width: $notebook) {
+      right: -300px;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
+.tel {
+}
+.checkbox-block {
+}
+.footer-form {
+  // .footer-form__checkbox-label
+
+  &__checkbox-label {
+  }
+
+  // .footer-form__checkbox-input
+
+  &__checkbox-input {
+  }
+
+  // .footer-form__checkbox-span
+
+  &__checkbox-span {
+  }
+
+  // .footer-form__chekbox-text
+
+  &__chekbox-text {
+  }
+
+  // .footer-form__chekbox-link
+
+  &__chekbox-link {
+  }
+}
+.checkbox {
+}
+.indicator {
+}
+.link {
+}
+.button {
+}
+.button-color-yellow {
+}
+.footer {
+  // .footer__col-bottom
+
+  &__col-bottom {
+  }
+}
+.footer-bottom {
+  // .footer-bottom__container
+
+  &__container {
+  }
+
+  // .footer-bottom__logo
+
+  &__logo {
+  }
+
+  // .footer-bottom__text
+
+  &__text {
+  }
+
+  // .footer-bottom__offer
+
+  &__offer {
+  }
+
+  // .footer-bottom__links
+
+  &__links {
+  }
+
+  // .footer-bottom__link
+
+  &__link {
+  }
+}
+.logo {
+}

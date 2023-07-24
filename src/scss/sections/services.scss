@@ -12,7 +12,7 @@
     &::before {
       content: "";
       background-image: url(@img/logo-decor.svg);
-      background-size: 100%;
+      background-size: contain;
       background-repeat: no-repeat;
       width: 170px;
       height: 170px;
@@ -20,6 +20,10 @@
       left: 0;
       bottom: -125px;
 
+      @media (max-width: $notebook) {
+        width: 130px;
+        height: 130px;
+      }
       @media (max-width: $netbook) {
         display: none;
       }
@@ -28,15 +32,16 @@
       content: "Rehab Recovery";
       position: absolute;
       z-index: 0;
-      bottom: -125px;
+      bottom: -135px;
       right: 0;
       font-family: $fontFamilyOsw;
       font-size: 210px;
+      line-height: 1;
       text-transform: uppercase;
       color: $colorGrayBlue;
 
       @media (max-width: $pc) {
-        font-size: 170px;
+        font-size: 160px;
       }
       @media (max-width: $notebook) {
         font-size: 140px;

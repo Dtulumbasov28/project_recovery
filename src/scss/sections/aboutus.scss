@@ -6,7 +6,8 @@
     position: absolute;
     z-index: 0;
     bottom: -70px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: $fontFamilyOsw;
     font-size: 204px;
     font-weight: 500;

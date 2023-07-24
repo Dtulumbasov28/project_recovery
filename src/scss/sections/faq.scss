@@ -113,6 +113,7 @@
     }
 
     &._spoller-active {
+      color: $colorBlue;
       &::after {
         transform: scale(1, -1);
       }

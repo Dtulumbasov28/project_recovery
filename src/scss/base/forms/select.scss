@@ -28,14 +28,14 @@
     }
     &:after {
       content: "";
-      align-self: stretch;
-      flex: 0 0 10px;
+      background: url("@img/arrow_spoller.svg") center center no-repeat;
+      background-size: 100%;
+      width: 16px;
+      height: 9px;
       transition: all 0.3s ease 0s;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
       ._select-open & {
-        transform: rotate(-180deg);
+        transform: scale(1, -1);
       }
     }
     &._select-pseudo-label {

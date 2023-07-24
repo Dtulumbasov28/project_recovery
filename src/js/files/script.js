@@ -4,7 +4,7 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 window.addEventListener("DOMContentLoaded", function () {
-  [].forEach.call(document.querySelectorAll(".tel"), function (input) {
+  [].forEach.call(document.querySelectorAll(".input__tel"), function (input) {
     var keyCode;
     function mask(event) {
       event.keyCode && (keyCode = event.keyCode);

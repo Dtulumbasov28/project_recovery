@@ -45,6 +45,11 @@
 
   &__slider-navigation {
     margin: auto 0 30px 0;
+
+    @media (max-width: $mobileSmallXS) {
+      margin: unset;
+      top: 90px;
+    }
   }
 
   // .centers__wrapper
@@ -65,7 +70,6 @@
 
     @media (max-width: $mobileSmall) {
       max-width: unset;
-      height: 250px;
     }
   }
 

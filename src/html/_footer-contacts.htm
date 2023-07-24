@@ -1,0 +1,49 @@
+<footer class="footer-contacts">
+    <div class="footer-contacts__container">
+        <div class="footer-contacts__body">
+            <div class="footer-contacts__form">
+                <div class="footer-contacts__form-headline footer__headline">Свяжемся с вами в ближайшее время для
+                    решения вашей проблемы
+                </div>
+                <div class="footer-contacts__form-desc footer__desc">Оставьте ваши контакты и мы свяжемся с вами</div>
+                <form class="footer-contacts__form-body" data-ajax action="request.php" method="POST">
+                    <input type="text" name="name" placeholder="Ваше имя" required
+                        onkeyup="this.value = this.value.replace(/[a-z0-9+= ]/gi,'');"
+                        class="footer-contacts__input input__name">
+                    <input type="tel" name="tel" placeholder="Ваш телефон" required
+                        class="footer-contacts__input input__tel">
+                    <textarea name="desc" placeholder="Сообщение" required
+                        class="footer-contacts__input-textarea input__textarea"></textarea>
+                    <div class="footer-contacts__chekbox checkbox">
+                        <label class="footer-contacts__checkbox-wrapper checkbox__wrapper">
+                            <input class="footer-contacts__checkbox-input checkbox__input" type="checkbox" checked>
+                            <span class="footer-contacts__checkbox-indicator checkbox__indicator"></span>
+                        </label>
+                        <div class="footer-form__chekbox-text checkbox__text">
+                            Я согласен с <a href="#" class="footer-form__chekbox-link checkbox__link link">условиями
+                                использования</a>
+                        </div>
+                    </div>
+                    <input type="submit" value="Отправить" class="button button-color-yellow">
+                </form>
+            </div>
+            <div class="footer-contacts__img">
+                <img src="@img/main/main_man.png" alt="#">
+            </div>
+
+        </div>
+    </div>
+    <div class="footer__col-bottom footer-bottom">
+        <div class="footer-bottom__container">
+            <a href="/" class="footer-bottom__logo logo"><img src="@img/logo-mono.svg" alt="#"></a>
+            <div class="footer-bottom__text">
+                <div class="footer-bottom__offer">© 2023 «Rehab Recovery». Все права защищены.</div>
+                <div class="footer-bottom__links">
+                    <a href="#" target="_blank" class="footer-bottom__link">Политика конфиденциальности</a>
+                    <a href="#" target="_blank" class="footer-bottom__link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>

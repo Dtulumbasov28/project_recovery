@@ -43,13 +43,6 @@
   // .center-head__link
 
   &__link {
-    font-size: 12px;
-    font-weight: 600;
-    color: $colorBlue;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
     margin-left: -33px;
 
     @media (max-width: $netbook) {
@@ -58,24 +51,44 @@
     @media (max-width: $tablet) {
       margin-bottom: 10px;
     }
-
-    &::before {
-      content: "";
-      background: url("../img/arrow.svg") center center no-repeat;
-      background-size: auto;
-      width: 22px;
-      height: 24px;
-      transform: rotate(180deg);
-      margin-right: 10px;
-      transition: all 0.3s;
-    }
   }
 
   // .center-head__title
 
   &__title {
+    position: relative;
+    z-index: 2;
     max-width: 660px;
     line-height: 1.15;
+
+    &::before {
+      content: "Rehub Recovery";
+      font-size: 200px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      color: #fff;
+      text-shadow:
+        0.5px 0.5px 0 #c6d0d8,
+        0.5px -0.5px 0 #c6d0d8,
+        -0.5px 0.5px 0 #c6d0d8,
+        -0.5px -0.5px 0 #c6d0d8;
+      position: absolute;
+      left: 20px;
+      top: -75px;
+      z-index: -1;
+
+      @media (max-width: $notebook) {
+        font-size: 180px;
+      }
+
+      @media (max-width: $netbook) {
+        font-size: 150px;
+      }
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
   }
 }
 .center-benefits {
