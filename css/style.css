@@ -3153,10 +3153,6 @@ li:not([class]) > a:not([class]) {
     width: auto !important;
     margin: 32px !important;
   }
-
-  .center-gallery__navigation {
-    display: none;
-  }
 }
 
 @media (max-width: 109.5em) {
@@ -3534,11 +3530,13 @@ li:not([class]) > a:not([class]) {
 
   .header__menu-item {
     position: relative;
+    z-index: 8;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    background-color: #fff;
   }
 
   .header__menu-link {
@@ -3584,6 +3582,7 @@ li:not([class]) > a:not([class]) {
   }
 
   .submenu {
+    width: 100%;
     top: 69px;
     background-color: #fff;
   }
@@ -3591,6 +3590,12 @@ li:not([class]) > a:not([class]) {
   .submenu__country {
     margin: unset;
     padding: 10px 30px;
+  }
+
+  .submenu__country-link {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 28px;
   }
 
   .submenu__country-link img {
@@ -3601,8 +3606,21 @@ li:not([class]) > a:not([class]) {
     border-left: none;
   }
 
+  .submenu__center-item {
+    margin-left: unset;
+  }
+
+  .submenu__center-img {
+    display: none;
+  }
+
   .submenu__center-link {
     max-width: 100%;
+    margin-left: unset;
+  }
+
+  .submenu__center-link::before {
+    display: none;
   }
 
   .submenu__center-city {
@@ -4015,10 +4033,6 @@ li:not([class]) > a:not([class]) {
     margin-right: unset;
   }
 
-  .center-gallery__navigation {
-    margin-bottom: 20px;
-  }
-
   .center-gallery__text {
     margin-top: 20px;
     min-width: unset;
@@ -4026,6 +4040,10 @@ li:not([class]) > a:not([class]) {
 
   .center-thumb {
     display: none;
+  }
+
+  .center-thumb__navigation {
+    margin-bottom: 30px;
   }
 
   .contacts__title {
@@ -4529,7 +4547,7 @@ li:not([class]) > a:not([class]) {
     height: 200px;
   }
 
-  .center-gallery__navigation {
+  .center-thumb__navigation {
     z-index: 2;
     top: 90px;
   }

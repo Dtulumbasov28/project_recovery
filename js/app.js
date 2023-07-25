@@ -4334,7 +4334,7 @@
                 }
             }
         });
-        var CenterThumbSlider = new core(".center-thumb__slider", {
+        var centerThumbSlider = new core(".center-thumb__slider", {
             modules: [ Navigation ],
             observer: true,
             slidesPerView: 2,
@@ -4374,7 +4374,7 @@
                 nextEl: ".center-next"
             },
             thumbs: {
-                swiper: CenterThumbSlider
+                swiper: centerThumbSlider
             }
         });
     }
