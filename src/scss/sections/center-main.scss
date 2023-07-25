@@ -190,20 +190,6 @@
     }
   }
 
-  // ..center-gallery__navigation
-  &__navigation {
-    @media (min-width: $tablet) {
-      display: none;
-    }
-    @media (max-width: $tablet) {
-      margin-bottom: 20px;
-    }
-    @media (max-width: $mobileSmall) {
-      z-index: 2;
-      top: 90px;
-    }
-  }
-
   // .center-gallery__slider-wrapper
 
   &__slider-wrapper {
@@ -285,6 +271,13 @@
   &__navigation {
     margin-bottom: 0;
     margin-right: 30px;
+    @media (max-width: $tablet) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $mobileSmall) {
+      z-index: 2;
+      top: 90px;
+    }
   }
   // .center-thumb__slider
 

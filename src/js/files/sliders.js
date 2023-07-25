@@ -197,7 +197,7 @@ function initSliders() {
       },
     },
   });
-  var CenterThumbSlider = new Swiper(".center-thumb__slider", {
+  var centerThumbSlider = new Swiper(".center-thumb__slider", {
     // Указываем скласс нужного слайдера
     // Подключаем модули слайдера
     // для конкретного случая
@@ -231,7 +231,7 @@ function initSliders() {
 
     },
   });
-  var CenterSlider = new Swiper(".center-gallery__slider", {
+  var centerSlider = new Swiper(".center-gallery__slider", {
     // Указываем скласс нужного слайдера
     // Подключаем модули слайдера
     // для конкретного случая
@@ -248,7 +248,7 @@ function initSliders() {
       nextEl: ".center-next",
     },
     thumbs: {
-      swiper: CenterThumbSlider,
+      swiper: centerThumbSlider,
     },
     // Кнопки "влево/вправо"
     // navigation: {
