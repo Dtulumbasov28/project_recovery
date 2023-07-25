@@ -246,6 +246,7 @@ section {
 input,
 textarea {
   width: 100%;
+  max-width: 100%;
   border-radius: $borderRadiusSmall;
   padding: 17px 20px;
   margin-bottom: 20px;
@@ -385,7 +386,8 @@ input[type="submit"] {
   .footer-info__address,
   .benefits__headline,
   .country-services__link,
-  .submenu__country-link {
+  .submenu__country-link,
+  .choice__country-link {
     &:hover {
       color: $colorBlue;
     }
@@ -397,6 +399,18 @@ input[type="submit"] {
         color: $mainColor;
       }
       & .submenu__center-name {
+        transition: all 0.3s;
+        color: $colorBlue;
+      }
+    }
+  }
+  .choice__center-link {
+    &:hover {
+      & .choice__center-city {
+        transition: all 0.3s;
+        color: $mainColor;
+      }
+      & .choice__center-name {
         transition: all 0.3s;
         color: $colorBlue;
       }
@@ -461,7 +475,8 @@ input[type="submit"] {
       border-bottom: 1px solid rgba($color: #000000, $alpha: 0.6);
     }
   }
-  .submenu__center {
+  .submenu__center,
+  .choice__center {
     transition: all 0.3s;
 
     &:hover {

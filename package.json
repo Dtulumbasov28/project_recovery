@@ -1,8 +1,9 @@
 {
-	"name": "fls-start",
+	"name": "project_recovery",
 	"version": "3.0.0",
-	"description": "Start template with Gulp and Webpack",
+	"description": "Rehab Recovery",
 	"author": "FLS",
+	"homepage": "https://dtulumbasov28.github.io/project_recovery",
 	"private": true,
 	"license": "",
 	"type": "module",
@@ -12,7 +13,7 @@
 		"build": "gulp build --build",
 		"sprite": "gulp sprite",
 		"fonts": "gulp fonts --rewrite",
-		"deploy": "gulp deployFTP --build",
+		"deploy": "gh-pages -d dist",
 		"zip": "gulp deployZIP --build",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js",
@@ -36,7 +37,7 @@
 		"gulp-plumber": "latest",
 		"gulp-prettier": "latest",
 		"gulp-rename": "latest",
-		"gulp-svg-sprite": "^1.5.0",		
+		"gulp-svg-sprite": "^1.5.0",
 		"gulp-ttf2woff": "latest",
 		"gulp-ttf2woff2": "latest",
 		"gulp-util": "latest",
@@ -72,6 +73,7 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"gh-pages": "^5.0.0",
 		"simplebar": "latest"
 	}
 }
