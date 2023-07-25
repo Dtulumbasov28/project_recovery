@@ -366,11 +366,6 @@
     }
   }
 
-  // .services-choice__body
-
-  &__body {
-    display: flex;
-  }
 
   // .services-choice__img
 
@@ -404,25 +399,4 @@
     }
   }
 
-  // .services-choice__link
-
-  &__link {
-    font-size: 14px;
-
-    @media (max-width: $mobile) {
-      display: none;
-    }
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-}
-.link {
-}
-.buttons {
-}
-.button {
-}
-.button-color-yellow {
 }

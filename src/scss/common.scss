@@ -333,7 +333,7 @@ input[type="submit"] {
     font-size: 14px;
   }
 }
-@media (hover: hover) {
+@media (hover: hover) and (min-width: $tablet) {
   button,
   a,
   button:hover,
@@ -384,8 +384,6 @@ input[type="submit"] {
   .centers__address,
   .aboutus__socials-link,
   .footer-info__address,
-  .benefits__headline,
-  .country-services__link,
   .submenu__country-link,
   .choice__country-link {
     &:hover {
@@ -476,7 +474,7 @@ input[type="submit"] {
     }
   }
   .submenu__center,
-  .choice__center {
+  .popup__content-countries .choice__center {
     transition: all 0.3s;
 
     &:hover {
