@@ -328,9 +328,9 @@ body::after {
           flex: 1 1 auto;
   width: 100%;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .popup__content {
@@ -1430,27 +1430,14 @@ input[type=submit] {
 
 .services__body::before {
   content: "";
-  background-image: url(../img/logo-decor.svg);
+  background-image: url("../img/services_decor.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 170px;
-  height: 170px;
+  width: 1584px;
+  height: 209px;
   position: absolute;
   left: 0;
   bottom: -125px;
-}
-
-.services__body:after {
-  content: "Rehab Recovery";
-  position: absolute;
-  z-index: 0;
-  bottom: -135px;
-  right: 0;
-  font-family: "Oswald";
-  font-size: 210px;
-  line-height: 1;
-  text-transform: uppercase;
-  color: var(--color-gray-blue);
 }
 
 .services__top {
@@ -2894,13 +2881,21 @@ input[type=submit] {
 }
 
 .article__left {
+  position: relative;
   width: 100%;
   max-width: 180px;
   margin-right: 25px;
 }
 
-.article__center {
-  max-width: 920px;
+.article__left::before {
+  content: "";
+  background: url("../img/article_decor.svg") center center no-repeat;
+  width: 202px;
+  height: 1615px;
+  display: block;
+  position: absolute;
+  top: 200px;
+  right: 0;
 }
 
 .article__title {
@@ -2989,10 +2984,9 @@ blockquote {
   padding: 0 21px;
 }
 
-blockquote.warning::before {
+blockquote.warning::before,
+blockquote.question::before {
   content: "";
-  background: url("../img/icon_warning.svg") center center no-repeat;
-  background-size: contain;
   width: 20px;
   height: 20px;
   -ms-flex-negative: 0;
@@ -3000,15 +2994,14 @@ blockquote.warning::before {
   margin: 6px 28px 0 0;
 }
 
+blockquote.warning::before {
+  background: url("../img/icon_warning.svg") center center no-repeat;
+  background-size: contain;
+}
+
 blockquote.question::before {
-  content: "";
   background: url("../img/icon_question.svg") center center no-repeat;
   background-size: contain;
-  width: 20px;
-  height: 20px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin: 6px 28px 0 0;
 }
 
 ul:not([class]) {
@@ -3330,10 +3323,6 @@ li:not([class]) > a:not([class]) {
     right: -200px;
   }
 
-  .services__body:after {
-    font-size: 160px;
-  }
-
   .aboutus::after {
     font-size: 150px;
   }
@@ -3383,12 +3372,8 @@ li:not([class]) > a:not([class]) {
   }
 
   .services__body::before {
-    width: 130px;
-    height: 130px;
-  }
-
-  .services__body:after {
-    font-size: 140px;
+    width: 1300px;
+    height: 175px;
   }
 
   .whyus__body {
@@ -3508,13 +3493,8 @@ li:not([class]) > a:not([class]) {
   }
 
   .services__body::before {
-    display: none;
-  }
-
-  .services__body:after {
-    font-size: 140px;
-    right: unset;
-    left: 0;
+    width: 1000px;
+    height: 175px;
   }
 
   .services__title {
@@ -3597,6 +3577,10 @@ li:not([class]) > a:not([class]) {
 
   .contacts__link {
     font-size: 50px;
+  }
+
+  .article__right {
+    margin-left: 40px;
   }
 }
 
@@ -3910,7 +3894,7 @@ li:not([class]) > a:not([class]) {
     margin-bottom: 80px;
   }
 
-  .services__body:after {
+  .services__body::before {
     display: none;
   }
 
@@ -4239,6 +4223,27 @@ li:not([class]) > a:not([class]) {
   .contacts__link {
     margin-bottom: 15px;
   }
+
+  .article__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .article__left::before {
+    display: none;
+  }
+
+  .article__left {
+    margin-right: unset;
+    max-width: unset;
+    margin-bottom: 10px;
+  }
+
+  .article__right {
+    display: none;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -4500,6 +4505,16 @@ li:not([class]) > a:not([class]) {
   .contacts__title {
     margin-bottom: 20px;
   }
+
+  blockquote {
+    padding: unset;
+    margin: 50px 0;
+  }
+
+  blockquote.warning::before,
+  blockquote.question::before {
+    margin: 6px 16px 0 0;
+  }
 }
 
 @media (max-width: 35.93625em) {
@@ -4752,6 +4767,11 @@ li:not([class]) > a:not([class]) {
 
   .faq-spollers__title {
     font-size: 16px;
+  }
+
+  blockquote.warning::before,
+  blockquote.question::before {
+    margin: 6px 10px 0 0;
   }
 }
 
