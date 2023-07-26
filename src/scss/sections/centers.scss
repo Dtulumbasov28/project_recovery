@@ -3,16 +3,6 @@
     background: $colorGrayBlue;
   }
 
-  // .centers__container
-
-  &__container {
-  }
-
-  // .centers__body
-
-  &__body {
-  }
-
   // .centers__top
 
   &__top {
@@ -27,10 +17,6 @@
     margin-bottom: 8px;
   }
 
-  // .centers__desc
-
-  &__desc {
-  }
 
   // .centers__slider
 
@@ -52,10 +38,6 @@
     }
   }
 
-  // .centers__wrapper
-
-  &__wrapper {
-  }
 
   // .centers__slide
 
@@ -171,14 +153,6 @@
     }
   }
 }
-.title {
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
 .centers {
   // .centers__slider-navigation
 
@@ -190,14 +164,4 @@
 
   &__navigation {
   }
-}
-.center-prev {
-}
-.swiper-button {
-}
-.swiper-button-prev {
-}
-.center-next {
-}
-.swiper-button-next {
 }

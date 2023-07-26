@@ -4,11 +4,6 @@
 .footer {
   background: $colorGrayBlue;
 
-  // .footer__container
-
-  &__container {
-  }
-
   // .footer__body
 
   &__body {
@@ -45,11 +40,6 @@
     }
   }
 
-  // .footer__form
-
-  &__form {
-  }
-
   // .footer__headline
 
   &__headline {
@@ -66,11 +56,6 @@
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 30px;
-  }
-
-  // .footer__form-body
-
-  &__form-body {
   }
 
   // .footer__col-info
@@ -112,27 +97,8 @@
       }
     }
   }
-
-  // .footer__col-bottom
-
-  &__col-bottom {
-  }
 }
 
-.input {
-}
-.checkbox-block {
-}
-.checkbox {
-}
-.indicator {
-}
-.link {
-}
-.button {
-}
-.button-color-yellow {
-}
 .footer-info {
   // .footer-info__title
 
@@ -142,29 +108,6 @@
     @media (max-width: $mobile) {
       margin-bottom: 30px;
     }
-  }
-
-  // .footer-info__select
-
-  // &__select {
-  //   position: relative;
-  //   display: inline-block;
-  //   width: 100%;
-  //   font-family: $fontFamilyMont;
-  //   font-size: 16px;
-  //   padding: 17px 20px;
-  //   margin-bottom: 20px;
-  //   -webkit-appearance: none;
-  //   -moz-appearance: none;
-  //   appearance: none;
-  //   background: #fff url("@img/arrow_spoller.svg") 95% center no-repeat;
-  //   &:focus {
-  //     border: none;
-  //     outline: none;
-  //   }
-  // }
-
-  &__select {
   }
 
   // .footer-info__phone
@@ -190,14 +133,8 @@
       margin-bottom: 15px;
     }
   }
-
-  // .footer-info__socials
-
-  &__socials {
-  }
 }
-.title {
-}
+
 .footer-phone {
   // .footer-phone__text
 
@@ -307,6 +244,4 @@
       margin-right: 10px;
     }
   }
-}
-.logo {
 }

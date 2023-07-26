@@ -67,11 +67,6 @@
     }
   }
 
-  // .header__logo-img
-
-  &__logo-img {
-  }
-
   // .header__menu
 
   &__menu {
@@ -302,9 +297,9 @@
     margin-bottom: 20px;
 
     @media (max-width: $tablet) {
-    font-family: $fontFamilyMont;
-    font-weight: 700;
-    font-size: 28px;
+      font-family: $fontFamilyMont;
+      font-weight: 700;
+      font-size: 28px;
     }
     & img {
       max-width: 40px;
@@ -443,9 +438,7 @@
       span {
         width: 0;
       }
-      &::before,
-      &::after {
-      }
+
       &::before {
         top: calc(50% - rem(1));
         transform: rotate(-45deg);
@@ -485,12 +478,4 @@
     transform: scale(1, -1);
     transition: all 0.3s;
   }
-  // &:after {
-  //   content: "";
-  //   background-size: 100%;
-  //   width: 16px;
-  //   height: 9px;
-  //   transition: all 0.3s;
-  //   margin-right: 20px;
-  // }
 }

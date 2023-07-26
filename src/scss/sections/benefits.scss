@@ -7,11 +7,6 @@
     padding: 15px 0 20px 0;
   }
 
-  // .benefits__container
-
-  &__container {
-  }
-
   // .benefits__body
 
   &__body {
@@ -53,11 +48,6 @@
     z-index: 1;
   }
 
-  // .benefits__slider-wrapper
-
-  &__slider-wrapper {
-  }
-
   // .benefits__slide
 
   &__slide {
@@ -97,24 +87,4 @@
     color: $colorGray;
     line-height: 1.75;
   }
-}
-.swiper {
-  // .swiper__navigation
-
-  &__navigation {
-  }
-}
-.benefits-prev {
-}
-.swiper-button {
-}
-.swiper-button-prev {
-}
-.benefits-next {
-}
-.swiper-button-next {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
 }

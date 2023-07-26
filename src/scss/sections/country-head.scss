@@ -4,10 +4,6 @@
   @media (max-width: $tablet) {
     padding: 40px 0 15px 0;
   }
-  // .country-head__container
-
-  &__container {
-  }
 
   // .country-head__body
 
@@ -150,11 +146,6 @@
     }
   }
 
-  // .country-main__bottom-wrapper
-
-  &__bottom-wrapper {
-  }
-
   // .country-main__bottom-slide
 
   &__bottom-slide {
@@ -203,24 +194,4 @@
     color: $colorGray;
     line-height: 1.75;
   }
-}
-.swiper {
-  // .swiper__navigation
-
-  &__navigation {
-  }
-}
-.country-main-prev {
-}
-.swiper-button {
-}
-.swiper-button-prev {
-}
-.country-main-next {
-}
-.swiper-button-next {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
 }

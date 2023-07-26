@@ -3,10 +3,6 @@
   @media (max-width: $mobile) {
     background: $colorGrayBlue;
   }
-  // .country-services__container
-
-  &__container {
-  }
 
   // .country-services__body
 
@@ -68,8 +64,4 @@
       transition: all 0.3s;
     }
   }
-}
-.button {
-}
-.button-color-yellow {
 }

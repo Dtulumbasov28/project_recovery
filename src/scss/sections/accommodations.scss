@@ -2,22 +2,12 @@
   @media (max-width: $mobileSmall) {
     background: $colorGrayBlue;
   }
-  // .accommodations__container
-
-  &__container {
-  }
-
   // .accommodations__top
 
   &__top {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
-
-  // .accommodations__title
-
-  &__title {
   }
 
   // .accommodations__navigation
@@ -36,11 +26,6 @@
 
   &__slider {
     position: relative;
-  }
-
-  // .accommodations__slider-wrapper
-
-  &__slider-wrapper {
   }
 
   // .accommodations__slide
@@ -159,14 +144,4 @@
 
   &__navigation {
   }
-}
-.centers-prev {
-}
-.swiper-button {
-}
-.swiper-button-prev {
-}
-.centers-next {
-}
-.swiper-button-next {
 }

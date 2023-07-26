@@ -1,9 +1,4 @@
 .services {
-  // .services__container
-
-  &__container {
-  }
-
   // .services__body
 
   &__body {
@@ -11,45 +6,22 @@
 
     &::before {
       content: "";
-      background-image: url(@img/logo-decor.svg);
+      background-image: url("@img/services_decor.svg");
       background-size: contain;
       background-repeat: no-repeat;
-      width: 170px;
-      height: 170px;
+      width: 1584px;
+      height: 209px;
       position: absolute;
       left: 0;
       bottom: -125px;
 
       @media (max-width: $notebook) {
-        width: 130px;
-        height: 130px;
+        width: 1300px;
+        height: 175px;
       }
       @media (max-width: $netbook) {
-        display: none;
-      }
-    }
-    &:after {
-      content: "Rehab Recovery";
-      position: absolute;
-      z-index: 0;
-      bottom: -135px;
-      right: 0;
-      font-family: $fontFamilyOsw;
-      font-size: 210px;
-      line-height: 1;
-      text-transform: uppercase;
-      color: $colorGrayBlue;
-
-      @media (max-width: $pc) {
-        font-size: 160px;
-      }
-      @media (max-width: $notebook) {
-        font-size: 140px;
-      }
-      @media (max-width: $netbook) {
-        font-size: 140px;
-        right: unset;
-        left: 0;
+        width: 1000px;
+        height: 175px;
       }
       @media (max-width: $tablet) {
         display: none;
@@ -83,11 +55,6 @@
       margin-right: unset;
       margin-bottom: 14px;
     }
-  }
-
-  // .services__choice
-
-  &__choice {
   }
 
   // .services__bottom
@@ -301,11 +268,6 @@
       }
     }
   }
-
-  // .services__footer
-
-  &__footer {
-  }
 }
 
 .services-other {
@@ -366,7 +328,6 @@
     }
   }
 
-
   // .services-choice__img
 
   &__img {
@@ -398,5 +359,4 @@
       }
     }
   }
-
 }

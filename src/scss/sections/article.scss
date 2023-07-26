@@ -1,35 +1,44 @@
 .article {
-  // .article__container
-
-  &__container {
-  }
-
   // .article__body
 
   &__body {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
 
   // .article__left
 
   &__left {
+    position: relative;
     width: 100%;
     max-width: 180px;
     margin-right: 25px;
+
+    &::before {
+      content: "";
+      background: url("@img/article_decor.svg") center center no-repeat;
+      width: 202px;
+      height: 1615px;
+      display: block;
+      position: absolute;
+      top: 200px;
+      right: 0;
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      margin-right: unset;
+      max-width: unset;
+      margin-bottom: 10px;
+    }
   }
-
-  // .article__breadcrumbs
-
-  &__breadcrumbs {
-  }
-
-  // .article__center
-
-  &__center {
-    max-width: 920px;
-  }
-
   // .article__title
 
   &__title {
@@ -59,17 +68,19 @@
     }
   }
 
-  // .article__text
-
-  &__text {
-  }
-
   // .article__right
 
   &__right {
     width: 100%;
     max-width: 250px;
     margin-left: 75px;
+
+    @media (max-width: $netbook) {
+      margin-left: 40px;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   // .article__chapters
@@ -86,14 +97,6 @@
 
   &__chapters-link {
   }
-}
-.breadcrumbs {
-}
-.title {
-}
-.warning {
-}
-.question {
 }
 p:not([class]) {
   line-height: 1.75;
@@ -131,27 +134,37 @@ blockquote {
   margin: 70px 0;
   padding: 0 21px;
 
-  &.warning {
+  @media (max-width: $mobile) {
+    padding: unset;
+    margin: 50px 0;
+  }
+  &.warning,
+  &.question {
     &::before {
       content: "";
-      background: url("@img/icon_warning.svg") center center no-repeat;
-      background-size: contain;
       width: 20px;
       height: 20px;
       flex-shrink: 0;
       margin: 6px 28px 0 0;
+      @media (max-width: $mobile) {
+        margin: 6px 16px 0 0;
+      }
+      @media (max-width: $mobileSmallXS) {
+        margin: 6px 10px 0 0;
+      }
+    }
+  }
+  &.warning {
+    &::before {
+      background: url("@img/icon_warning.svg") center center no-repeat;
+      background-size: contain;
     }
   }
 
   &.question {
     &::before {
-      content: "";
       background: url("@img/icon_question.svg") center center no-repeat;
       background-size: contain;
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-      margin: 6px 28px 0 0;
     }
   }
 }
