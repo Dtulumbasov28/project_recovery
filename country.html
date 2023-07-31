@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230726113853">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230731095627">
 	<link rel="shortcut icon" href="favicon.svg">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -640,20 +640,14 @@
 				<div class="reviews__slider swiper">
 					<ul class="reviews__wrapper swiper-wrapper">
 						<li class="reviews__slide swiper-slide">
-							<video width="780" height="470" controls="controls">
-								<source src="img/test.mp4" type="video/mp4">
-							</video>
+							<button data-popup="#video" data-popup-youtube="KmHkajDI97o">
+								<img src="img/review/preview.jpg" alt="#">
+							</button>
 						</li>
-						<!-- <li class="reviews__slide swiper-slide">
-                <iframe width="780" height="470" src="https://www.youtube.com/embed/oA5pKO-l-B0?controls=0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </li> -->
 						<li class="reviews__slide swiper-slide">
-							<video width="780" height="470" controls="controls">
-								<source src="img/test.mp4" type="video/mp4">
-							</video>
+							<button data-popup="#video" data-popup-youtube="Ax0C6rlo-54">
+								<img src="img/review/preview.jpg" alt="#">
+							</button>
 						</li>
 					</ul>
 				</div>
@@ -1129,6 +1123,13 @@
 			</div>
 		</div>
 	</div>
+	<div id="video" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div data-youtube-place class="popup__text popup__content popup__content-video">
+				<button data-close type="button" class="popup__close"><span></span></button>
+			</div>
+		</div>
+	</div>
 	<div id="lecheniye-zavisimostey" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content popup__content-desc">
@@ -1399,7 +1400,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230726113853"></script>
+	<script src="js/app.min.js?_v=20230731095627"></script>
 </body>
 
 </html>
