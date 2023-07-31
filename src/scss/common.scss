@@ -403,7 +403,14 @@ input[type="submit"] {
       transform: scale(0.95);
     }
   }
-
+  .reviews__slide {
+    &:hover {
+      & > button::before {
+        opacity: 1;
+        transition: all 0.3s;
+      }
+    }
+  }
   .services__bottom-img {
     transition: all 0.3s;
   }
